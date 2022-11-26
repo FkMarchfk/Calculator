@@ -1,19 +1,19 @@
-import java.util.Scanner; // Importuje zmienne wprowadzone przez użytkownika do programu
+import java.util.Scanner;
 import java.io.IOException; 
 
 public class Kalkulator {
 	public static void main(String[] args) throws IOException, InterruptedException{
 
 		double a, b, c;
-		new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor(); // Czyszczenie okna cmd
+		new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor(); // Cleaning CMD
 
 
-		Scanner myObj = new Scanner(System.in);  // Utworzenie obiektu Skanera 
+		Scanner myObj = new Scanner(System.in); 
 		System.out.println("Enter the first number");
-		a = myObj.nextDouble();  // Zapisanie zmiennej od użytkownika
+		a = myObj.nextDouble(); 
 
 		System.out.println("Enter the second number");
-		b = myObj.nextDouble();  // Zapisanie zmiennej od użytkownika
+		b = myObj.nextDouble(); 
 		
 		c=a+b;
 		System.out.println("Addition result: " + a + " + " + b + " = " + c);
